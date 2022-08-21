@@ -9,9 +9,7 @@ function selectedCart(array) {
     for (let i = 0; i < array.length; i++) {
         const li = document.createElement('li');
         li.innerText = ` ${array[i].name}`
-        console.log(li);
         displayName.appendChild(li);
-        console.log(displayName);
         // if (array.length <= 5) {
         //     // const li = document.createElement('li');
         //     li.innerText = ` ${array[i].name}`
@@ -30,14 +28,12 @@ function selectedCart(array) {
 function addToSelect(elemnt) {
 
     const name = elemnt.parentNode.parentNode.children[0].innerText;
-    console.log(name);
 
     const playerObj = {
         name: name,
     }
 
     nameArray.push(playerObj);
-    console.log(nameArray);
     if (nameArray.length > 5) {
         alert("You can not select more then 5 players.");
         return;
@@ -45,7 +41,16 @@ function addToSelect(elemnt) {
 
     selectedCart(nameArray);
 
-
-
-
 }
+
+document.getElementById("calculate-btn").addEventListener('click', function () {
+    const perPlayerCost = getInputValueById("per-player");
+
+    const displayName = document.getElementById("display-name");
+
+    const players = displayName.getElementsByTagName("li");
+    const totalPlayerCost = perPlayerCost * players.length;
+    console.log(totalPlayerCost);
+
+    setTextValue("palyer-expenses", totalPlayerCost);
+})
