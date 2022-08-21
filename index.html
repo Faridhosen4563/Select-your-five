@@ -32,53 +32,54 @@
 
 </head>
 
-<body>
+<body class="bg-black w-full h-full">
     <!-- header part start  -->
+    <header>
+        <section>
+            <!-- nev bar start -->
 
-    <section>
-        <!-- nev bar start -->
-
-        <div class="navbar bg-black px-20 w-full">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost btn-circle text-white">
+            <div class="navbar bg-black px-20 w-full">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost btn-circle text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Homepage</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <a class="btn btn-ghost normal-case text-xl text-white">Pick Your Best Five</a>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h7" />
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Homepage</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>About</a></li>
-                    </ul>
+                    </button>
+                    <button class="btn btn-ghost btn-circle text-white">
+                        <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                            <span class="badge badge-xs badge-primary indicator-item"></span>
+                        </div>
+                    </button>
                 </div>
             </div>
-            <div class="navbar-center">
-                <a class="btn btn-ghost normal-case text-xl text-white">Pick Your Best Five</a>
-            </div>
-            <div class="navbar-end">
-                <button class="btn btn-ghost btn-circle text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </button>
-                <button class="btn btn-ghost btn-circle text-white">
-                    <div class="indicator">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                        </svg>
-                        <span class="badge badge-xs badge-primary indicator-item"></span>
-                    </div>
-                </button>
-            </div>
-        </div>
+        </section>
 
         <!-- nev bar end -->
 
@@ -87,7 +88,7 @@
         <section>
             <div class="bg-[url('./images/banner.jpg')] bg-cover bg-center h-[60vh] w-full flex ">
                 <div class="flex justify-start items-end w-1/6">
-                    <img src="./images/player.png" alt="" srcset="" class="w-[80vh] h-[50vh]">
+                    <img src="./images/player.png" alt="" srcset="" class="w-full h-[50vh]">
                 </div>
                 <div class="text-center text-white py-12 flex flex-col h-3/4 my-auto">
                     <h1 class="font-raleway text-6xl font-extrabold mb-2">Pick Your Best Five</h1>
@@ -100,9 +101,203 @@
 
         <!-- header part end -->
 
-    </section>
+    </header>
 
     <!-- header part end  -->
+
+    <!-- main part start -->
+
+    <main>
+
+        <!-- card section start  -->
+
+        <section class="m-12">
+            <div class="flex">
+                <div class="grid grid-cols-3 gap-4 pb-10">
+                    <div class="card w-full bg-black border border-white">
+                        <figure>
+                            <img src="./images/messi.jpg" alt="Lionel Messi" class="w-full h-52" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-white">Lionel Messi</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions w-full">
+                                <button class="btn btn-primary w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full bg-black border border-white">
+                        <figure>
+                            <img src="./images/neymar.jpg" alt="Neymar Jr" class="w-full h-52" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-white">Neymar Jr</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions w-full">
+                                <button class="btn btn-primary w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full bg-black border border-white">
+                        <figure>
+                            <img src="./images/ramos.jpg" alt="Sergio Ramos" class="w-full h-52" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-white">Sergio Ramos</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions w-full">
+                                <button class="btn btn-primary w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full bg-black border border-white">
+                        <figure>
+                            <img src="./images/marqu.jpg" alt="Marquinhos" class="w-full h-52" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-white">Marquinhos</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions w-full">
+                                <button class="btn btn-primary w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full bg-black border border-white">
+                        <figure>
+                            <img src="./images/navas.jpg" alt="Keylor Navas" class="w-full h-52" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-white">Keylor Navas</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions w-full">
+                                <button class="btn btn-primary w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full bg-black border border-white">
+                        <figure>
+                            <img src="./images/verati.jpg" alt="Marco Verratti" class="w-full h-52" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-white">Marco Verratti</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions w-full">
+                                <button class="btn btn-primary w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full bg-black border border-white">
+                        <figure>
+                            <img src="./images/guaye.jpg" alt="Idrissa Gueye" class="w-full h-52" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-white">Idrissa Gueye</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions w-full">
+                                <button class="btn btn-primary w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full bg-black border border-white">
+                        <figure>
+                            <img src="./images/psg-centre-half-presnel-kimpembe.jpg" alt="Presnel Kimpembe"
+                                class="w-full h-52" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-white">Presnel Kimpembe</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions w-full">
+                                <button class="btn btn-primary w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full bg-black border border-white">
+                        <figure>
+                            <img src="./images/icardi.jpg" alt="Mauro Icardi" class="w-full h-52" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-white">Mauro Icardi</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions w-full">
+                                <button class="btn btn-primary w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full bg-black border border-white">
+                        <figure>
+                            <img src="./images/hakimi.jpg" alt="Achraf Hakimi" class="w-full h-52" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-white">Achraf Hakimi</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions w-full">
+                                <button class="btn btn-primary w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full bg-black border border-white">
+                        <figure>
+                            <img src="./images/nunu.jpg" alt="Nuno Mendes" class="w-full h-52" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-white">Nuno Mendes</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions w-full">
+                                <button class="btn btn-primary w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full bg-black border border-white">
+                        <figure>
+                            <img src="./images/Mbappe-PSG.jpg" alt="Kylian Mbappé" class="w-full h-52" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-white">Kylian Mbappé</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions w-full">
+                                <button class="btn btn-primary w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="mx-4">
+                    <div class="flex flex-col">
+                        <div class="card w-96 bg-base-100 gap-4 ">
+                            <figure class="px-10 pt-10">
+                                <img src="https://placeimg.com/400/225/arch" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Shoes!</h2>
+                                <p>If a dog chews shoes whose shoes does he choose?</p>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-96 bg-base-100 mt-2">
+                            <figure class="px-10 pt-10">
+                                <img src="https://placeimg.com/400/225/arch" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Shoes!</h2>
+                                <p>If a dog chews shoes whose shoes does he choose?</p>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- card section end -->
+
+    </main>
+
+    <!-- main part end -->
 
 </body>
 
