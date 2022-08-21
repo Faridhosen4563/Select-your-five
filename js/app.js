@@ -54,3 +54,16 @@ document.getElementById("calculate-btn").addEventListener('click', function () {
 
     setTextValue("palyer-expenses", totalPlayerCost);
 })
+
+document.getElementById("total-cost").addEventListener('click', function () {
+    const playerTotalCostElemnet = document.getElementById("palyer-expenses");
+    const playerTotalCostString = playerTotalCostElemnet.innerText;
+    const playerTotalCost = parseFloat(playerTotalCostString);
+
+    const mangerCost = getInputValueById("manager");
+    const coachCost = getInputValueById("coach");
+
+    const totalCost = playerTotalCost + mangerCost + coachCost;
+
+    setTextValue("total", totalCost);
+})
