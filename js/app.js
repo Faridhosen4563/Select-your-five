@@ -5,6 +5,9 @@ function selectedCart(array) {
     const displayName = document.getElementById("display-name");
     displayName.innerHTML = '';
 
+    const palyerCount = document.getElementById("palyer-count");
+    palyerCount.innerText = array.length;
+
 
     for (let i = 0; i < array.length; i++) {
         const li = document.createElement('li');
@@ -26,8 +29,11 @@ function addToSelect(elemnt) {
     }
 
     nameArray.push(playerObj);
+
     if (nameArray.length > 5) {
         alert("You can not select more then 5 players.");
+
+
         return;
     }
 

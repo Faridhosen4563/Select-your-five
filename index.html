@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pick Your Best Five</title>
+    <title>Pick Your Top Five</title>
 
     <!-- for tailwind  -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -93,13 +93,14 @@
 
         <section>
             <div class="bg-[url('./images/banner.jpg')] bg-cover bg-center h-[60vh] w-full flex ">
-                <div class="flex justify-start items-end w-1/6">
+                <div class="flex flex-col md:flex-row justify-start items-end w-1/3">
                     <img src="./images/player.png" alt="" srcset="" class="w-full h-[50vh]">
                 </div>
                 <div class="text-center text-white py-12 flex flex-col h-3/4 my-auto">
-                    <h1 class="font-raleway text-6xl font-extrabold mb-2 text-orange-500">Pick Your Top Five</h1>
-                    <h1>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt<br> nostrud amet.</h1>
+                    <h1 class="font-raleway text-6xl font-extrabold  text-orange-500 pb-4">Pick Your Top Five</h1>
+                    <h1>This site you can select your top five player in psg 2022 active squad. This is so<br>
+                        interesting work. You can selected legend player. So this site<br> is so cool site for psg
+                        fan base. You can select <br> top five player in the psg team.</h1>
                 </div>
 
             </div>
@@ -117,16 +118,16 @@
 
         <!-- card section start  -->
 
-        <section class="my-12">
-            <div class="flex">
-                <div class="grid grid-cols-3 gap-4 pb-10">
-                    <div class="card w-full bg-black border border-white">
+        <section class=" md:my-12">
+            <div class="flex mx-8 mb-4 flex-col lg:flex-row md:px-12 md:mx-0 md:mb-0">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-10 mt-10 mx-2 md:mt-0">
+                    <div class="card w-full  bg-black border border-white">
                         <figure>
-                            <img src="./images/messi.jpg" alt="Lionel Messi" class="w-full h-52" />
+                            <img src="./images/messi.jpg" alt="Lionel Messi" class="w-full h-52 lg:h-52" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Lionel Messi</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p class="text-slate-400 pb-6"><small>769 Goals | 331 Assists</small> </p>
                             <div class="card-actions w-full">
                                 <button class="btn btn-primary w-full " onclick="addToSelect(this)">Select</button>
                             </div>
@@ -138,7 +139,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Neymar Jr</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p class="text-slate-400 pb-6"><small>401 Goals | 224 Assists</small> </p>
                             <div class="card-actions w-full">
                                 <button class="btn btn-primary w-full " onclick="addToSelect(this)">Select</button>
                             </div>
@@ -150,7 +151,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Sergio Ramos</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p class="text-slate-400 pb-6"><small>130 Goals | 48 Assists</small> </p>
                             <div class="card-actions w-full">
                                 <button class="btn btn-primary w-full " onclick="addToSelect(this)">Select</button>
                             </div>
@@ -162,7 +163,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Marquinhos</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p class="text-slate-400 pb-6"><small>43 Goals | 10 Assists</small> </p>
                             <div class="card-actions w-full">
                                 <button class="btn btn-primary w-full " onclick="addToSelect(this)">Select</button>
                             </div>
@@ -174,7 +175,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Keylor Navas</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p class="text-slate-400 pb-6"><small>324 Save | 109 CleanShit </small> </p>
                             <div class="card-actions w-full">
                                 <button class="btn btn-primary w-full " onclick="addToSelect(this)"
                                     id="">Select</button>
@@ -187,7 +188,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Marco Verratti</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p class="text-slate-400 pb-6"><small>8 Goals | 45 Assists</small> </p>
                             <div class="card-actions w-full">
                                 <button class="btn btn-primary w-full " onclick="addToSelect(this)">Select</button>
                             </div>
@@ -199,7 +200,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Idrissa Gueye</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p class="text-slate-400 pb-6"><small>12 Goals | 33 Assists</small> </p>
                             <div class="card-actions w-full">
                                 <button class="btn btn-primary w-full " onclick="addToSelect(this)">Select</button>
                             </div>
@@ -212,7 +213,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Presnel Kimpembe</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p class="text-slate-400 pb-6"><small>6 Goals | 14 Assists</small> </p>
                             <div class="card-actions w-full">
                                 <button class="btn btn-primary w-full " onclick="addToSelect(this)">Select</button>
                             </div>
@@ -224,7 +225,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Mauro Icardi</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p class="text-slate-400 pb-6"><small>156 Goals | 34 Assists</small> </p>
                             <div class="card-actions w-full">
                                 <button class="btn btn-primary w-full " onclick="addToSelect(this)">Select</button>
                             </div>
@@ -236,7 +237,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Achraf Hakimi</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p class="text-slate-400 pb-6"><small>2 Goals | 1 Assists</small> </p>
                             <div class="card-actions w-full">
                                 <button class="btn btn-primary w-full " onclick="addToSelect(this)">Select</button>
                             </div>
@@ -248,7 +249,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Nuno Mendes</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p class="text-slate-400 pb-6"><small>20 Goals | 15 Assists</small> </p>
                             <div class="card-actions w-full">
                                 <button class="btn btn-primary w-full " onclick="addToSelect(this)">Select</button>
                             </div>
@@ -260,7 +261,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Kylian Mbappé</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p class="text-slate-400 pb-6"><small>216 Goals | 78 Assists</small> </p>
                             <div class="card-actions w-full">
                                 <button class="btn btn-primary w-full " onclick="addToSelect(this)">Select</button>
                             </div>
@@ -270,9 +271,13 @@
 
                 </div>
                 <div class="mx-4">
-                    <div class="flex flex-col">
+                    <div class="flex flex-col md:flex md:flex-row lg:flex-col md:mx-4 lg:mx-0">
                         <div class="border text-white  bg-black border-gray-400 w-72 pt-6 pb-12 h-[415px] rounded-2xl">
-                            <h2 class="text-center">Selected - V</h2>
+                            <h2
+                                class="text-center border text-xl font-medium border-white w-3/4 mx-auto py-2 rounded-lg">
+                                Selected
+                                <span id="palyer-count" class="text-blue-400">0</span>
+                            </h2>
                             <div class="p-12">
                                 <ol class="list-decimal" id="display-name">
 
@@ -281,58 +286,62 @@
                             </div>
 
                         </div>
-                    </div>
-                    <div class=" w-72 bg-black mt-4 h-[500px] rounded-2xl border text-white  border-gray-400 px-4">
 
-                        <!-- <div class="card-body items-center text-center">
+                        <div
+                            class=" w-72 bg-black md:ml-4 lg:ml-0 md:mt-0 lg:mt-4 mt-4 h-[500px] rounded-2xl border text-white  border-gray-400 px-4">
+
+                            <!-- <div class="card-body items-center text-center">
                             <h2 class="card-title">Shoes!</h2>
                             <p>If a dog chews shoes whose shoes does he choose?</p>
                             <div class="card-actions">
                                 <button class="btn btn-primary">Buy Now</button>
                             </div>
                         </div> -->
-                        <div>
-                            <h1 class="text-white font-medium text-center pt-12 pb-3">Budget</h1>
                             <div>
-                                <div class="flex justify-between items-center">
-                                    <h1>Per player :
-                                    </h1>
-                                    <input class="bg-black border border-white w-2/4 px-2 py-1" type="number"
-                                        placeholder="per player cost " id="per-player">
+                                <h1
+                                    class="mt-12 mb-6 text-white font-medium text-center  border text-xl  border-white w-3/4 mx-auto py-2 rounded-lg">
+                                    Budget</h1>
+                                <div>
+                                    <div class="flex justify-between items-center">
+                                        <h1>Per player :
+                                        </h1>
+                                        <input class="bg-black border border-white w-2/4 px-2 py-1" type="number"
+                                            placeholder="per player cost " id="per-player">
+                                    </div>
+                                    <div class="flex  justify-center mb-6">
+                                        <button class="px-12 bg-blue-600 uppercase py-2 mt-8 rounded w-full"
+                                            id="calculate-btn">Calculate</button>
+                                    </div>
+                                    <h1 class="pb-4">Player Expenses <span class="pl-4">$<span
+                                                id="palyer-expenses">00</span></span></h1>
+                                    <div class="flex justify-between items-center pb-4">
+                                        <h1>Manager</h1>
+                                        <input class="bg-black border border-white w-2/4 px-2 py-1" type="number"
+                                            placeholder="Manager cost" id="manager">
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <h1 class="  ">Coach
+                                        </h1>
+                                        <input class="bg-black border border-white w-2/4 px-2 py-1" type="number"
+                                            placeholder="Coach cost" id="coach">
+                                    </div>
+                                    <div class="flex  justify-center mb-6">
+                                        <button class="px-12 bg-blue-600 uppercase py-2 mt-8 rounded w-full "
+                                            id="total-cost">Total
+                                            Calculate</button>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <h1 class="  ">Total
+                                        </h1>
+                                        <h1>$<span class="text-red-500 pb-6" id="total">0</span></h1>
+                                    </div>
                                 </div>
-                                <div class="flex  justify-center mb-6">
-                                    <button class="px-12 bg-blue-600 uppercase py-2 mt-8 rounded w-full"
-                                        id="calculate-btn">Calculate</button>
-                                </div>
-                                <h1 class="pb-4">Player Expenses <span class="pl-4">$<span
-                                            id="palyer-expenses">00</span></span></h1>
-                                <div class="flex justify-between items-center pb-4">
-                                    <h1>Manager</h1>
-                                    <input class="bg-black border border-white w-2/4 px-2 py-1" type="number"
-                                        placeholder="Manager cost" id="manager">
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <h1 class="  ">Coach
-                                    </h1>
-                                    <input class="bg-black border border-white w-2/4 px-2 py-1" type="number"
-                                        placeholder="Coach cost" id="coach">
-                                </div>
-                                <div class="flex  justify-center mb-6">
-                                    <button class="px-12 bg-blue-600 uppercase py-2 mt-8 rounded w-full "
-                                        id="total-cost">Total
-                                        Calculate</button>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <h1 class="  ">Total
-                                    </h1>
-                                    <h1>$<span id="total">0</span></h1>
-                                </div>
-
-
                             </div>
+
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             </div>
         </section>
