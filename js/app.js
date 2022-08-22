@@ -10,16 +10,7 @@ function selectedCart(array) {
         const li = document.createElement('li');
         li.innerText = ` ${array[i].name}`
         displayName.appendChild(li);
-        // if (array.length <= 5) {
-        //     // const li = document.createElement('li');
-        //     li.innerText = ` ${array[i].name}`
-        //     console.log(li);
 
-        //     console.log(displayName);
-        // }
-        // else {
-
-        // }
     }
 
 
@@ -28,6 +19,7 @@ function selectedCart(array) {
 function addToSelect(elemnt) {
 
     const name = elemnt.parentNode.parentNode.children[0].innerText;
+
 
     const playerObj = {
         name: name,
@@ -38,6 +30,8 @@ function addToSelect(elemnt) {
         alert("You can not select more then 5 players.");
         return;
     }
+
+    elemnt.setAttribute('disabled', true);
 
     selectedCart(nameArray);
 
