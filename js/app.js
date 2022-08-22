@@ -45,11 +45,25 @@ function addToSelect(elemnt) {
 
 document.getElementById("calculate-btn").addEventListener('click', function () {
     const perPlayerCost = getInputValueById("per-player");
+    if (isNaN(perPlayerCost) === true) {
+        alert("Please enter per players cost");
+        return;
+    }
+    if (perPlayerCost <= 0) {
+        alert("Please provide per player cost positive value.");
+        return;
+    }
 
     const displayName = document.getElementById("display-name");
 
     const players = displayName.getElementsByTagName("li");
+
+    if (players.length === 0) {
+        alert("Please select players");
+        return;
+    }
     const totalPlayerCost = perPlayerCost * players.length;
+
     console.log(totalPlayerCost);
 
     setTextValue("palyer-expenses", totalPlayerCost);
@@ -60,8 +74,31 @@ document.getElementById("total-cost").addEventListener('click', function () {
     const playerTotalCostString = playerTotalCostElemnet.innerText;
     const playerTotalCost = parseFloat(playerTotalCostString);
 
+    if (playerTotalCost === 0) {
+        alert("Please calculate player cost.");
+        return;
+    }
+
     const mangerCost = getInputValueById("manager");
+
+    if (isNaN(mangerCost) === true) {
+        alert("Please enter manager cost.");
+        return;
+    }
+    if (mangerCost <= 0) {
+        alert("Please provide manager cost positive value.");
+        return;
+    }
+
     const coachCost = getInputValueById("coach");
+
+    if (isNaN(coachCost) === true) {
+        alert("Please enter coach cost.");
+        return;
+    }
+    if (coachCost <= 0) {
+        alert("Please provide coach cost positive value.")
+    }
 
     const totalCost = playerTotalCost + mangerCost + coachCost;
 
